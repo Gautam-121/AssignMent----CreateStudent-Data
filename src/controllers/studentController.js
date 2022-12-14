@@ -140,9 +140,10 @@ const editStudent=async (req,res)=>{
 
         console.log(update)
         console.log(check)
-        if(Object.keys(check).length>0){
+        if(update.hasOwnProperty("subject")||update.hasOwnProperty("name")){
+            // console.log("I am in")
             let doublicate=await studentModel.findOne(check)
-            console.log(doublicate)
+            // console.log(doublicate)
             if(doublicate){
                 return res.status(400).send({status:false,message:"The combination of name and subject that you have given to update already exist."})
             }
