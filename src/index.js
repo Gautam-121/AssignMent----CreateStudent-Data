@@ -6,7 +6,7 @@ const app=express()
 app.use(express.json());
 
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://RahulSinghDhek:IQpy326QQQKAkK2J@cluster0.dxzlfnc.mongodb.net/group6Database?retryWrites=true&w=majority",)
+mongoose.connect("mongodb+srv://Sushant_Bhaiswar_30:WBYUu1bCYmxmZUmg@cluster0.jui41on.mongodb.net/Gautam20-DB?retryWrites=true&w=majority",)
     .then(() => console.log("MongoDb is connected"))
     .catch(err => console.log(err))
 

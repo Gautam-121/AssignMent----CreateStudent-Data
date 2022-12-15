@@ -13,7 +13,6 @@ router.post("/createStudent",authentication,studentContoller.createStudent)
 router.get("/getStudent/:studentId",authentication,studentContoller.getStudentById)
 router.get("/getStudent",authentication,studentContoller.getStudentByFilter)
 router.put("/editStudent/:studentId",authentication,studentContoller.editStudent)
-router.put("/editStudent/:studentId",authentication,studentContoller.editStudent)
 router.delete("/deleteStudent/:studentId",authentication,studentContoller.deleteStudentById)
 
 
